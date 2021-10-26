@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Monda&family=Oswald&family=Patrick+Hand&family=Teko&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* .logo{
+    width: 13%;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid red;
+} */
+
+.logo{
+    margin-left: 65px;
+    width: 14%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    margin-top: 5px;
+    width: 77%;
+    border: 4px solid white;
+    border-radius: 44px;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+
+.nav-list{
+    width: 65%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 25px 30px;
+}
+
+.nav-list li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Monda', sans-serif;
+    /* font-family: 'Cookie', cursive; */
+}
+
+.nav-list li a:hover{
+    color: rgb(255, 173, 173);
+}
+
+.rightNav{
+    /* background-color: slateblue; */
+    width: 35%;
+    text-align: right;
+    padding: 0 30px;
+}
+
+#search{
+    padding: 10px;
+    font-size: 20px;
+    border: 3px solid grey;
+    border-radius: 20px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.4) url('../img/bg.jpg'); 
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.background-cover{
+    background: rgba(0, 0, 0, 0.9) url('../img/bg.jpg'); 
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+/* .background-cover{
+    background: rgba(0, 0, 0, 0.7) url('../img/bg.jpg'); 
+    background-size: cover;
+    background-blend-mode: darken; */
+
+
+.firstSection{
+    height: 100vh;
+}
+
+.box-main{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf{
+    width: 30%;
+
+}
+
+.secondHalf img{
+    width: 70%;
+    border: 5px solid white;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 50px;
+    font-family: 'Monda', sans-serif;
+}
+
+.text-small{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn{
+    padding: 15px 24px;
+    margin: 14px 0;
+    border: 3px solid white;
+    border-radius: 17px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    /* font-family: 'Patrick Hand', cursive;
+    font-family: 'Teko', sans-serif; */
+    font-family: 'Monda', sans-serif;
+}
+
+.btn-sm{
+    padding: 7px 16px;
+    vertical-align: middle;
+    font-size: 18px;
+    font-family: 'Teko', sans-serif;
+
+}
+
+.btn-dark{
+    font-size: 15px;
+    color: black;
+    border: 3px solid grey;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 212px;
+    font-family: 'Monda', sans-serif;
+}
+
+.section{
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+.left{
+    flex-direction: row-reverse;
+}
+
+.thumbnail{
+    width: 180%;
+}
+
+.thumbnail img{
+    width: 70%;
+    border: 5px solid white;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+}
+
+.paras{
+    padding: 15px;
+}
+
+.contact{
+    background-color: antiquewhite;
+    height: 55vh;
+}
+.text-center{
+    font-family: 'Monda', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    padding: 10px;
+}
+.form{
+    max-width: 550px;
+    margin: auto;
+}
+
+.form input{
+    margin-top: 30px;
+    padding: 5px;
+    width: 100%;
+    font-size: 25px;
+    border: 3px solid grey;
+    border-radius: 12px;
+    font-family: 'Teko', sans-serif;
+}
+
+.text-footer{
+    font-family: 'Oswald', sans-serif;
+        /* font-size: 30px; */
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0;
+        color: white;
+    
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 30px;
+    background-color: white;
+    height: 3px;
+    margin: 5px 5px;
+}
+
+@media only screen and (max-width: 1273px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 550px;
+        flex-direction: column;
+        transition: all 0.6s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    #search{
+        font-size: 15px;
+        width: 100%;
+    }
+    .logo{
+        margin-left: 16px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 57px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+
+    .section{
+        flex-direction: column-reverse;
+    }
+    .thumbnail img{
+        width: 50%;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+}
